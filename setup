@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Homebrew
+
+if [ ! -f /usr/local/bin/brew ]; then
+  echo "Installing Homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+
+# Ansible
+
+if [ ! -f /usr/local/bin/ansible ]; then
+  echo "Installing Ansible.."
+  brew install ansible
+fi
+
+xcode-select --install
+ansible-galaxy install -r requirements.txt
+ansible-playbook main.yml -i inventory --ask-sudo-pass
+
+echo "You may wish to install the following applications manually:"
+echo "  Mail Act-On: https://smallcubed.com/mao/"
