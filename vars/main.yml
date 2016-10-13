@@ -3,87 +3,84 @@ downloads: ~/.ansible-downloads/
 
 configure_sudoers: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo: git@bitbucket.org:tricon/dotfiles.git
+dotfiles_repo_local_destination: ~/.dotfiles
 dotfiles_files:
+  - .ackrc
+  - .bashrc
   - .bash_profile
+  - .bash_profile
+  - .erc-credentials
+  - .gemrc
   - .gitconfig
-  - .gitignore
-  - .inputrc
-  - .osx
+  - .gitconfig
+  - .gitmodules
+  - .irbrc
+  - .jabber-accounts
+  - .mbsyncrc
+  - .netrc
+  - .powconfig
+  - .pryrc
+  - .s3cfg
+  - .tm_properties
+  - .togglrc
+  - .tugboat
   - .vimrc
+  - .vimrc
+  - .zshenv.omz
+  - .zshrc
+  - .zshrc.omz
 
 homebrew_installed_packages:
-  - ansible
-  - autoconf
-  - bash-completion
-  - docker
-  - docker-compose
-  - docker-machine
-  - gettext
-  - git
-  - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libdvdcss
-  - libevent
-  - packer
-  - python
-  - sqlite
-  - mcrypt
-  - mysql
-  - npm
-  - nvm
-  - php56
-  - php56-mcrypt
-  - php56-xdebug
-  - ssh-copy-id
-  - cowsay
-  - ios-sim
-  - readline
-  - subversion
-  - kdiff3
-  - openssl
-  - pv
-  - drush
-  - wget
-  - wrk
-  - brew-cask
+  - name: ansible
+  - name: autoconf
+  - name: emacs-plus
+    options: --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
+  - name: gettext
+  - name: git
+  - name: gpg
+  - name: hub
+  - name: irssi
+  - name: libevent
+  - name: mas
+  - name: packer
+  - name: python
+  - name: sqlite
+  - name: mysql
+  - name: npm
+  - name: ssh-copy-id
+  - name: readline
+  - name: openssl
+  - name: wget
+  - name: brew-cask
 
 homebrew_taps:
   - caskroom/cask
-  - homebrew/binary
-  - homebrew/dupes
-  - homebrew/php
-  - homebrew/versions
+  - d12frosted/emacs-plus
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - adium
-  - bettertouchtool
-  - google-chrome
-  - dropbox
-  - fing
-  - firefox
-  - handbrake
-  - karabiner
-  - limechat
-  - licecap
-  - macvim
-  - menumeters
-  - nvalt
-  - sequel-pro
-  - skype
-  - skitch
-  - seil
-  - sublime-text # Note - Sublime Text 2 only, at this time...
-  - textmate
-  - timemachineeditor
-  - tower
-  - transmit
-  - vagrant
-  - vagrant-manager
-  - vlc
-  - virtualbox
+  - name: 1password
+  - name: bettertouchtool
+  - name: crashplan
+  - name: dropbox
+  - name: firefox
+  - name: google-chrome
+  - name: hazel
+  - name: iterm2
+  - name: karabiner
+  - name: launchbar
+  - name: licecap
+  - name: omnifocus
+  - name: paparazzi
+  - name: rescuetime
+  - name: sequel-pro
+  - name: skype
+  - name: textmate
+  - name: teleport
+  - name: toggldesktop
+  - name: transmit
+  - name: vagrant
+  - name: vagrant-manager
+  - name: virtualbox
+  - name: vitamin-r
