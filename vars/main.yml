@@ -74,6 +74,7 @@ homebrew_cask_apps:
   - name: omnifocus
   - name: paparazzi
   - name: rescuetime
+  - name: selfcontrol
   - name: sequel-pro
   - name: skype
   - name: textmate
